@@ -23,14 +23,22 @@ public class Developpeur extends Utilisateur{
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Developpeur(int id, String name, String email) {
-		super(id, name, email);
+	
+	
+	public Developpeur(int idUtilisateur, String name, String email, String password) {
+		super(idUtilisateur, name, email, password);
+		// TODO Auto-generated constructor stub
 	}
-	public Developpeur(int id, String name, String email, List<String> competences, List<Projet> historiqueProjet) {
-		super(id, name, email);
+
+	
+
+	public Developpeur(List<String> competences, List<Projet> historiqueProjet) {
+		super();
 		this.competences = competences;
 		this.historiqueProjet = historiqueProjet;
 	}
+
+
 	public List<String> getCompetences() {
 		return competences;
 	}

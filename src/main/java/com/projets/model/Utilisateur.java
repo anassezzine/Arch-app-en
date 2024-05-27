@@ -16,15 +16,17 @@ public class Utilisateur {
 	private int idUtilisateur;
 	private String name;
 	private String email;
+	private String password;
 	public Utilisateur() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Utilisateur(int idUtilisateur, String name, String email) {
+	public Utilisateur(int idUtilisateur, String name, String email, String password) {
 		super();
 		this.idUtilisateur = idUtilisateur;
 		this.name = name;
 		this.email = email;
+		this.password = password;
 	}
 	public int getIdUtilisateur() {
 		return idUtilisateur;
@@ -44,9 +46,11 @@ public class Utilisateur {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	@Override
-	public String toString() {
-		return "Utilisateur [idUtilisateur=" + idUtilisateur + ", name=" + name + ", email=" + email + "]";
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	

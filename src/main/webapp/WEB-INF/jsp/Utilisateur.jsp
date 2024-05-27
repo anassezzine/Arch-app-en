@@ -1,15 +1,25 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>utilisateur</title>
+    <title>Liste des Utilisateurs</title>
 </head>
 <body>
-<form method=post action="/utilisateur" >
-Name : <input type=text name=nom />
-Email : <input type=email name=email />
-</form>
+    <h1>Liste des Utilisateurs</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Email</th>
+        </tr>
+        <c:forEach var="utilisateur" items="${utilisateurs}">
+            <tr>
+                <td>${utilisateur.idUtilisateur}</td>
+                <td>${utilisateur.name}</td>
+                <td>${utilisateur.email}</td>
+            </tr>
+        </c:forEach>
+    </table>
 </body>
 </html>
