@@ -4,13 +4,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>utilisateur</title>
 </head>
 <body>
-<form method=post action="/projets" >
-Description : <input type=text name=description />
-Budget : <input type=text name=budget />
-<input type=submit value="Add" />
+<form method=post action="/utilisateur" >
+Name : <input type=text name=nom />
+Email : <input type=email name=email />
 </form>
 </body>
 </html>

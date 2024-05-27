@@ -12,22 +12,25 @@ import jakarta.persistence.InheritanceType;
 public class Utilisateur {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
-	 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int idUtilisateur;
 	private String name;
 	private String email;
-	public Utilisateur(int id, String name, String email) {
+	public Utilisateur() {
 		super();
-		this.id = id;
+		// TODO Auto-generated constructor stub
+	}
+	public Utilisateur(int idUtilisateur, String name, String email) {
+		super();
+		this.idUtilisateur = idUtilisateur;
 		this.name = name;
 		this.email = email;
 	}
-	public int getId() {
-		return id;
+	public int getIdUtilisateur() {
+		return idUtilisateur;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setIdUtilisateur(int idUtilisateur) {
+		this.idUtilisateur = idUtilisateur;
 	}
 	public String getName() {
 		return name;
@@ -41,10 +44,10 @@ public class Utilisateur {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	 
-	 
-	 
-	 
+	@Override
+	public String toString() {
+		return "Utilisateur [idUtilisateur=" + idUtilisateur + ", name=" + name + ", email=" + email + "]";
+	}
 	
-
+	
 }
