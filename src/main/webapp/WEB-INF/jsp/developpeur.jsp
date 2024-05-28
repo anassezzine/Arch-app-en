@@ -1,15 +1,29 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page import="com.projets.model.Developpeur" %>
+
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DÃ©veloppeurs</title>
+    <title>Développeurs</title>
 </head>
 <body>
-    <h1>DÃ©veloppeurs</h1>
+	<p>Hello</p> 
+    <h1>Développeurs</h1>
+    <ul>
+        <% 
+            for (Developpeur developpeur : developpeurs) {
+        %>
+            <li><%= developpeur.getName() %></li>
+        <% 
+            }
+        %>
+    </ul>
+<!-- 
     <ul>
         <c:forEach var="developpeur" items="${developpeurs}">
-            <li>${developpeur.name}
+            <li>${developpeur.name} 
+            
                 <ul>
                     <c:forEach var="projet" items="${developpeur.historiqueProjet}">
                         <li><a href="projets/${projet.id}">${projet.name}</a></li>
@@ -18,5 +32,6 @@
             </li>
         </c:forEach>
     </ul>
+     -->
 </body>
 </html>
