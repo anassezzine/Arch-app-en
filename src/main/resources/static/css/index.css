@@ -1,0 +1,72 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(160, 203, 207); /* Couleur plus claire pour la navbar */
+    padding: 10px 20px; /* Réduire le padding horizontalement */
+}
+
+.navbar img {
+    height: 70px; /* Augmentation de la hauteur du logo */
+    width: auto; /* La largeur s'ajustera automatiquement en conservant les proportions */
+    margin-right: 40px;
+    
+}
+
+.navbar a {
+    color: #333; /* Couleur de texte plus foncée pour contraste */
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: #4a8d93; /* Couleur de l'élément actif ou survolé */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center; /* Centrer le contenu verticalement */
+    height: calc(100vh - 70px); /* Ajuster la hauteur en fonction de la hauteur de la navbar */
+    text-align: center;
+    margin-top: 100px; /* Ajuster la marge supérieure pour abaisser le contenu */
+}
+
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+h1 strong {
+    font-weight: bold;
+}
+.subheading {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+button {
+    background-color: rgb(160, 203, 207); /* Gris foncé pour les boutons */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #000; /* Noir au survol */
+}
