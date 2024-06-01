@@ -1,0 +1,68 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(160, 203, 207); /* Couleur plus claire pour la navbar */
+    padding: 10px 20px; /* Réduire le padding horizontalement */
+}
+
+.navbar img {
+    height: 70px; /* Augmentation de la hauteur du logo */
+    width: auto; /* La largeur s'ajustera automatiquement en conservant les proportions */
+    margin-right: 40px;
+    
+}
+
+.navbar a {
+    color: #333; /* Couleur de texte plus foncée pour contraste */
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: #4a8d93; 
+}
+
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: rgb(160, 203, 207);
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
