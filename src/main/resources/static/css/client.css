@@ -84,31 +84,3 @@ table tbody table tr td a {
 table tbody table tr td a:hover {
     text-decoration: underline;
 }
-
-.btn-supprimer {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.btn-supprimer:hover {
-    background-color: darkred;
-}
-
-button {
-    background-color: rgb(160, 203, 207); /* Gris foncé pour les boutons */
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #4a8d93; /* Noir au survol */
-}

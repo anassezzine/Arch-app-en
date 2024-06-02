@@ -3,6 +3,7 @@ body {
     background-color: #f4f4f9;
     margin: 0;
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -14,7 +15,6 @@ body {
     height: 70px; /* Augmentation de la hauteur du logo */
     width: auto; /* La largeur s'ajustera automatiquement en conservant les proportions */
     margin-right: 40px;
-    
 }
 
 .navbar a {
@@ -24,11 +24,11 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+
 .navbar a:hover,
 .navbar a.active {
-    color: #4a8d93; 
+    color: #4a8d93;
 }
-
 
 .container {
     padding: 20px;
@@ -38,6 +38,21 @@ h1 {
     color: #333;
     text-align: center;
     margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 5px 0;
 }
 
 table {
@@ -64,51 +79,4 @@ table tr:nth-child(even) {
 
 table tr:hover {
     background-color: #ddd;
-}
-
-table tbody table {
-    width: 100%;
-    border: none;
-}
-
-table tbody table tr td {
-    border: none;
-    padding: 5px 0;
-}
-
-table tbody table tr td a {
-    color: #4a8d93;
-    text-decoration: none;
-}
-
-table tbody table tr td a:hover {
-    text-decoration: underline;
-}
-
-.btn-supprimer {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.btn-supprimer:hover {
-    background-color: darkred;
-}
-
-button {
-    background-color: rgb(160, 203, 207); /* Gris foncé pour les boutons */
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #4a8d93; /* Noir au survol */
 }

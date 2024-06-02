@@ -26,12 +26,7 @@ body {
 }
 .navbar a:hover,
 .navbar a.active {
-    color: #4a8d93; 
-}
-
-
-.container {
-    padding: 20px;
+    color: #4a8d93; /* Couleur de l'élément actif ou survolé */
 }
 
 h1 {
@@ -40,62 +35,47 @@ h1 {
     margin-bottom: 20px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: left;
+form {
+    /*width: 100%;*/
+    max-width: 700px; /* Largeur maximale du formulaire */
+    padding: 50px;
+    margin: auto; /* Centrer horizontalement et ajouter une marge supérieure */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-table th, table td {
-    padding: 12px;
-    border: 1px solid #ddd;
-}
-
-table th {
-    background-color: rgb(160, 203, 207);
+label {
+    display: block;
+    padding-right: 40%;
+    margin-bottom: 10px;
     color: #333;
 }
 
-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+input[type="text"],
+input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin-right: 40%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-table tr:hover {
-    background-color: #ddd;
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #4a8d93;
 }
 
-table tbody table {
-    width: 100%;
-    border: none;
-}
-
-table tbody table tr td {
-    border: none;
-    padding: 5px 0;
-}
-
-table tbody table tr td a {
-    color: #4a8d93;
-    text-decoration: none;
-}
-
-table tbody table tr td a:hover {
-    text-decoration: underline;
-}
-
-.btn-supprimer {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.btn-supprimer:hover {
-    background-color: darkred;
+#competences input[type="text"] {
+	display: block;
+    width: 50%;
+    margin-right: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
@@ -112,3 +92,5 @@ button {
 button:hover {
     background-color: #4a8d93; /* Noir au survol */
 }
+
+
