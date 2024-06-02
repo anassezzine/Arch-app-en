@@ -66,3 +66,22 @@ table tr:nth-child(even) {
 table tr:hover {
     background-color: #ddd;
 }
+
+table tbody table {
+    width: 100%;
+    border: none;
+}
+
+table tbody table tr td {
+    border: none;
+    padding: 5px 0;
+}
+
+table tbody table tr td a {
+    color: #4a8d93;
+    text-decoration: none;
+}
+
+table tbody table tr td a:hover {
+    text-decoration: underline;
+}
